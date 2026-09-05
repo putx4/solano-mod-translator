@@ -1,0 +1,50 @@
+# Solano Mod Translator - Paquete de instalacion
+
+Instalador completo de la aplicacion Solano Mod Translator.
+
+## Contenido
+
+| Archivo | Descripcion |
+|---------|-------------|
+| `InstalarTodo.bat` | Para el usuario final. Instala todo automaticamente. |
+| `InstalarTodo.ps1` | Script de instalacion (llamado por el .bat). |
+| `Solano Mod Translator_1.0.0_x64-setup.exe` | Instalador de la aplicacion Tauri. |
+
+## Para instalar en otra maquina
+
+1. Descomprime este paquete en cualquier carpeta.
+2. Haz doble clic en `InstalarTodo.bat`.
+3. Acepta el aviso de "permisos de administrador" cuando aparezca.
+4. El asistente instalara de forma automatica (si falta):
+   - **Node.js** (via winget)
+   - **opencode** (servidor local de IA, via npm)
+   - La **aplicacion** Solano Mod Translator
+5. Al terminar, abre la app y configura tu API Key.
+
+## Requisitos de la maquina objetivo
+
+- Windows 10/11 de 64 bits
+- Conexion a internet (para descargar Node.js y opencode la primera vez)
+- Permisos de administrador
+
+## Configuracion inicial (una sola vez por usuario)
+
+Cada persona usa **su propia API Key** (no se comparte):
+
+1. Abre la app **Solano Mod Translator**.
+2. Ve a **Configuracion**.
+3. En "Proveedores de IA", pega tu clave en el proveedor que quieras:
+   - **Gemini**: obtienes una gratis en https://aistudio.google.com/apikey
+   - **OpenAI**: https://platform.openai.com/api-keys
+   - Tambien puedes usar el proveedor local **opencode** si ya configuraste uno.
+4. Pulsa **Guardar** y luego **Probar conexion**.
+5. Espera a que diga "conexion exitosa" y ya puedes traducir.
+
+La API Key se guarda de forma segura en el almacen de credenciales de Windows
+(no se escribe en ningun archivo del disco).
+
+## Notas
+
+- No es necesario compartir tu clave: cada usuario pone la suya.
+- El ejecutar `InstalarTodo.bat` no instala nada si ya esta todo presente.
+- Para desinstalar, usa "Agregar o quitar programas" > Solano Mod Translator.

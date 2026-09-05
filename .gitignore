@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+src-tauri/target
+src-tauri/gen
+
+# Environment - API keys (nunca commitear)
+.env
+
+# Tauri / OS
+*.log
+.DS_Store
+Thumbs.db
+
+# SQLite local
+*.db
+*.db-shm
+*.db-wal
+
+# Paquete de instalacion (artefacto binario)
+*.zip
